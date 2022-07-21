@@ -1,20 +1,12 @@
-import React, { useState } from 'react';
-import ResourceList from './ResourceList';
+import React from 'react';
+import { selectedSong } from '../Actions';
+import SongsList from './SongsList';
 
 export default () => {
-    const [resource, setResourece] = useState("posts");
     
     return (
         <div>
-            <div>
-                <button onClick={() => setResourece('posts')}>
-                    Posts
-                </button>
-                <button onClick={() => setResourece('todos')}>
-                    Todos
-                </button>
-            </div>
-            <ResourceList resource={resource} />
+            <SongsList />
         </div>
     );
 };
