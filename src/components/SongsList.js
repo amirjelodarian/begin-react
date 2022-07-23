@@ -26,11 +26,20 @@ const renderList = (props) => {
    }); 
 };
 
+// this func want combine state to props
+
 const mapStateToProps = (state) => {
     console.log(state);
     return {
         songs: state.songs
     };
 };
+// action work in props
+// this mean all action convert to props ;D
 
-export default connect(mapStateToProps, { selectedSong })(SongsList);
+// connect function do dispatch
+
+export default connect(mapStateToProps, {
+    // every actions must add to here ;D
+     selectedSong 
+    })(SongsList);

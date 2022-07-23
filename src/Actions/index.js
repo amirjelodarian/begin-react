@@ -1,3 +1,5 @@
+// Creator
+
 export const selectedSong = (song) => {
     return{
         type: 'SONG_SELECTED', // Required
