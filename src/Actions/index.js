@@ -1,6 +1,6 @@
 export const selectedSong = (song) => {
     return{
-        type: 'SELECTED_SONG', // Required
+        type: 'SONG_SELECTED', // Required
         payload: song,         // Optional
     };
 };

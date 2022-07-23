@@ -5,8 +5,12 @@ import SongsList from './SongsList';
 export default () => {
     
     return (
-        <div>
-            <SongsList />
+        <div className="ui container grid" style={{ marginTop: '20px' }}>
+            <div className="ui row">
+                <div className="column right wide">
+                    <SongsList />
+                </div>
+            </div>
         </div>
     );
 };
