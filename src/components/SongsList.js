@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { selectedSong } from '../Actions/index';
 
 const SongsList = (props) => {   
-    console.log(props); 
     return(
         <div className="ui middle aligned devided list">
             {renderList(props)}
@@ -29,7 +28,6 @@ const renderList = (props) => {
 // this func want combine state to props
 
 const mapStateToProps = (state) => {
-    console.log(state);
     return {
         songs: state.songs
     };
